@@ -251,7 +251,7 @@ def hid_report_mouse_move_rel(buffer_mouse_rel):
     y_hid = buffer_mouse_rel[5]
     x_hid -= 0xFF if x_hid > 127 else 0
     y_hid -= 0xFF if y_hid > 127 else 0
-    mouse.move(K_M,x_hid*3,y_hid*3,True,SCREEN_SIZE[0],SCREEN_SIZE[1])
+    mouse.move(K_M,x_hid,y_hid,True,SCREEN_SIZE[0],SCREEN_SIZE[1])
     print ("line 255, mouse move rel",x_hid,y_hid)
     return 0
 
