@@ -12,3 +12,6 @@ loguru==0.7.2
 pyWinhook==1.6.2
 pyqtdarktheme==2.1.0
 pywin32==306
+numpy
+pyserial
+ch9329
